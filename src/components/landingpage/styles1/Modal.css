@@ -132,3 +132,17 @@
     margin-top: 70px;
   }
 }
+.toggle-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.toggle-link {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}
