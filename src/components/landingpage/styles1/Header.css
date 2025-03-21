@@ -1,0 +1,121 @@
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 30px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 100;
+}
+
+/* Logo styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.company-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+/* Navigation styles */
+.nav-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300; /* Light weight */
+  font-size: 19px;
+  color: #8e8e93;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.5s ease, transform 0.5s ease-in-out;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #16181a;
+  transform: scale(1.5, 1.5);
+}
+
+.dropdown-arrow {
+  font-size: 0.7rem;
+  margin-left: 4px;
+  color: #888;
+}
+
+/* Sign in button styles */
+.auth-container {
+  display: flex;
+  align-items: center;
+}
+
+.signin-button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 102, 204, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.signin-button:hover {
+  background-color: #0052a3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 20px;
+  }
+
+  .company-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2d3436;
+    letter-spacing: -0.5px;
+  }
+
+  .nav-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .signin-button {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .signin-button {
+    padding: 7px 16px;
+    font-size: 0.85rem;
+  }
+}

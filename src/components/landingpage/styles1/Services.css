@@ -1,0 +1,104 @@
+.services-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+/* Services container */
+/* Services container */
+.services-container {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Title */
+.services-title {
+  font-size: 48px; /* Adjust size as needed */
+  font-weight: 900; /* Extra bold */
+  font-family: "Poppins", sans-serif; /* Change if needed */
+  text-transform: uppercase; /* Ensures full uppercase */
+  color: black; /* Ensures it is pure black */
+  margin-bottom: auto;
+}
+
+.services-subtitle {
+  font-size: 18px;
+  color: gray;
+  margin-bottom: 25px;
+}
+
+/* Grid layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(160px, 1fr)
+  ); /* Slightly bigger */
+  gap: 50px;
+  max-width: 1000px; /* Increased width */
+  margin: 0 auto; /* Keep the grid structured but not centered */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Individual service cards */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: scale(1.15);
+}
+
+/* Service icons */
+.service-icon {
+  width: 80px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+/* Service names */
+.service-name {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 40px;
+  }
+
+  .service-card {
+    align-items: flex-start; /* Keep text aligned left on mobile too */
+  }
+
+  .service-icon {
+    width: 70px;
+  }
+
+  .service-name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+  }
+
+  .service-icon {
+    width: 60px;
+  }
+
+  .service-name {
+    font-size: 14px;
+  }
+}

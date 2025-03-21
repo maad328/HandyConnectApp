@@ -1,0 +1,225 @@
+.footer {
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  padding: 80px 0 20px;
+  color: #333;
+  border-top: 1px solid #eaeaea;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 60px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.footer-logo img {
+  height: 45px;
+  width: auto;
+  filter: brightness(0.9);
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover img {
+  transform: scale(1.05);
+}
+
+.footer-logo span {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2d3436;
+  letter-spacing: -0.5px;
+}
+
+.footer-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #636e72;
+  margin-bottom: 25px;
+  max-width: 320px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #2d3436;
+  position: relative;
+}
+
+/* Remove the general h3::after and make it specific */
+.footer-section:first-child h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background: #0066ff;
+  border-radius: 2px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 14px;
+}
+
+.footer-section ul li a,
+.footer-section ul li span {
+  color: #636e72;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  cursor: default;
+}
+
+.footer-section ul li a::after,
+.footer-section ul li span::after {
+  display: none;
+}
+
+.footer-section ul li a:hover,
+.footer-section ul li span:hover {
+  transform: none;
+  color: #636e72;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #636e72;
+  font-size: 17px;
+  margin-bottom: 16px;
+  transition: none;
+  cursor: default;
+}
+
+.contact-info li:hover {
+  transform: none;
+}
+
+.contact-info i {
+  color: #0066ff;
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 60px auto 0;
+  padding: 30px 40px;
+  border-top: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f2f5;
+  color: #0066ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.social-link:hover {
+  background-color: #0066ff;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 102, 255, 0.2);
+}
+
+.copyright {
+  color: #636e72;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 0 30px;
+  }
+
+  .footer-description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .footer-section {
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-description {
+    text-align: center;
+  }
+
+  .contact-info li {
+    justify-content: center;
+  }
+
+  .footer-section ul li a:hover {
+    transform: translateX(0);
+  }
+
+  .contact-info li:hover {
+    transform: translateX(0);
+  }
+
+  .footer-bottom {
+    padding: 30px 20px;
+  }
+}
+
+/* Add Font Awesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
