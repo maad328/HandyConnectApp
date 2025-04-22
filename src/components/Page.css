@@ -1,0 +1,263 @@
+/* Main container */
+.employee-directory {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: (to bottom, #f8f9fa, #ffffff);
+}
+
+/* Directory header styles */
+.directory-header {
+  display: flex;
+  flex-direction: column; /* Stack title and controls vertically */
+  align-items: center; /* Center both horizontally */
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.title-section h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.count {
+  color: #777;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.search-wrapper {
+  width: 100%;
+  max-width: 500px; /* Good length */
+}
+
+.search-bar {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 999px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 40px 12px 16px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  border-radius: 999px;
+  background-color: transparent;
+}
+
+.search-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+/* Grid layout */
+.employee-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+/* Employee card */
+.employee-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.employee-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+
+.profile-photo-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 300px;
+}
+
+.employee-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.employee-card:hover .profile-photo {
+  transform: scale(1.08);
+}
+
+.employee-details {
+  padding: 16px;
+}
+
+.employee-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.employee-location {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-label {
+  color: #777;
+  font-size: 14px;
+}
+
+.stat-value {
+  font-weight: 500;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  color: #ccc;
+  font-size: 16px;
+}
+
+.star.filled {
+  color: #ffb400;
+}
+
+.star.half-filled {
+  color: #ffb400;
+  opacity: 0.7;
+}
+
+.rating-text {
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+/* Message button */
+.message-button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 16px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  background-color: #0066cc;
+  color: white;
+}
+
+.message-button:hover {
+  background-color: #f5f5f5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .directory-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .employee-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+.People {
+  font-size: 48px; /* Adjust size as needed */
+  font-weight: 900; /* Extra bold */
+  font-family: "Poppins", sans-serif; /* Change if needed */
+  text-transform: uppercase; /* Ensures full uppercase */
+  color: black; /* Ensures it is pure black */
+  margin-bottom: auto;
+}
+.team-heading-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.team-heading {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #222;
+  margin-bottom: 24px;
+}
+
+.team-subheading {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .team-heading {
+    font-size: 32px;
+  }
+
+  .team-subheading {
+    font-size: 16px;
+  }
+}

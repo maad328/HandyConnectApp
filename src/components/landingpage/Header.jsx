@@ -25,7 +25,6 @@ export default function Header() {
         {/* Logo */}
         <div className="logo-container">
           <img src="/stylish-h-logo.svg" alt="H Logo" className="logo" />
-          <span className="company-name">HandyConnect</span>
         </div>
 
         {/* Navigation Links */}
@@ -40,9 +39,6 @@ export default function Header() {
               </a>
               <a href="/services" className="nav-link">
                 Services <span className="dropdown-arrow">▼</span>
-              </a>
-              <a href="/blog" className="nav-link">
-                Blog
               </a>
             </>
           )}

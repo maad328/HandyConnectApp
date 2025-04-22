@@ -71,13 +71,7 @@ const Modal = ({ isOpen, onClose }) => {
                     <input
                       type="text"
                       className="modal-input"
-                      placeholder="First Name"
-                      required
-                    />
-                    <input
-                      type="text"
-                      className="modal-input"
-                      placeholder="Last Name"
+                      placeholder="Name"
                       required
                     />
                   </>
